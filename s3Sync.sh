@@ -8,4 +8,6 @@ aws s3 sync $1 s3://$S3_BUCKET/$fullpath \
             --exclude '*/.idea/*' \
             --exclude '*/.vagrant/*' \
             --exclude '*.box' \
-            --exclude '*.env' 
+            --exclude '*.env' \
+            --exclude '*/node_modules/*' \
+            --exclude '*/token-list/*'
